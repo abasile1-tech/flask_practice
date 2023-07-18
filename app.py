@@ -9,3 +9,7 @@ def index():
 @app.route('/<name>')
 def greet(name):
 	return f"Hello {name}"
+
+@app.route('/iwant/<food>')
+def get_food(food):
+	return f"I want {food}"
